@@ -49,9 +49,9 @@ namespace COMP003A.EmployeeManagementSystem
             get { return _lastName; }
             set
             {
+                _lastName = value;
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    _lastName = value;
                     throw new ArgumentException("Last Name is required");
                 }
             }
